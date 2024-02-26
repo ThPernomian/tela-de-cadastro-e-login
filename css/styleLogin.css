@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    background-color: rgb(188, 184, 184);;
+}
+h2{
+    font-size: 36px;
+    font-weight: normal;
+}
+.linha{
+    border: 2px solid #1eff05;
+    width: 320px;
+}
+.informacoes{
+    font-size: 20px;  
+}
+.nome input, .senha input, .senhaConfirm input{
+    border: none;
+    padding: 4px 4px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.entrar, .cancelar{
+    border: none;
+    background-color: green;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: aliceblue;
+    transition: .3s ease-in;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.entrar:hover{
+    background-color: limegreen;
+}
+.cancelar{
+    border: none;
+    background-color: red;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: aliceblue;
+    transition: .3s ease-in;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.cancelar:hover{
+background-color: tomato;
+}
+
+
+/*MENSAGENS E AVISOS*/
+.msgErro{
+    color: red;
+    background-color: rgb(255, 183, 183);
+    border-radius: 4px;
+    padding: 6px;
+    display: none;
+}
+.msgEntrando{
+    color: green;
+    background-color: rgb(189, 255, 183);
+    border-radius: 4px;
+    padding: 6px;
+    display: none;
+}
